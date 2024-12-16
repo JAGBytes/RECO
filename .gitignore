@@ -10,13 +10,5 @@ labs/**/*Video/
 labs/**/*video/
 labs/**/*Videos/
 labs/**/*videos/
-
-# Ignorar todo lo demás por defecto
-
-
-# No ignorar subdirectorios dentro de labs/
-!labs/**/
-
-# Ignorar archivos temporales generados por editores de texto
 *.log
 *.tmp
