@@ -1,4 +1,3 @@
-*
 !labs/
 !.gitignore
 labs/**/*Video/
@@ -7,3 +6,4 @@ labs/**/*Videos/
 labs/**/*videos/
 *.log
 *.tmp
+*
