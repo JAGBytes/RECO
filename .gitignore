@@ -1,11 +1,7 @@
 # No ignorar el directorio labs/
 *
 !labs/
-
-# No ignorar el archivo .gitignore
 !.gitignore
-
-# Excluir cualquier carpeta llamada Video, video, Videos o videos en cualquier subcarpeta de labs/
 labs/**/*Video/
 labs/**/*video/
 labs/**/*Videos/
