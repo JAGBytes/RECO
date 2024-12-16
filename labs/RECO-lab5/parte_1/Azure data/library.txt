@@ -1,0 +1,48 @@
+-- Crear la tabla Authors
+CREATE TABLE Authors (
+    AuthorID INT PRIMARY KEY IDENTITY,
+    Name NVARCHAR(100) NOT NULL
+);
+
+-- Crear la tabla Books
+CREATE TABLE Books (
+    BookID INT PRIMARY KEY IDENTITY,
+    Title NVARCHAR(200) NOT NULL,
+    AuthorID INT,
+    PublishedDate DATE,
+    FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+);
+
+-- Crear la tabla Articles
+CREATE TABLE Articles (
+    ArticleID INT PRIMARY KEY IDENTITY,
+    Title NVARCHAR(200) NOT NULL,
+    AuthorID INT,
+    Journal NVARCHAR(100),
+    PublishedDate DATE,
+    FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+);
+
+INSERT INTO Authors (Name) VALUES 
+('John Doe'), 
+('Jane Smith'), 
+('Alice Johnson');
+
+INSERT INTO Books (Title, AuthorID, PublishedDate) VALUES 
+('Understanding SQL Server', 1, '2023-01-15'), 
+('Advanced Database Systems', 2, '2022-05-10'), 
+('Data Science for Dummies', 1, '2023-07-30');
+
+INSERT INTO Articles (Title, AuthorID, Journal, PublishedDate) VALUES 
+('The Future of Databases', 2, 'Database Journal', '2023-03-12'), 
+('SQL Performance Tuning', 1, 'Tech Review', '2023-06-25'), 
+('NoSQL Databases Explained', 3, 'Journal of Computer Science', '2022-11-20');
+
+
+SELECT * FROM Authors;
+SELECT * FROM Books;
+SELECT * FROM Articles;
+
+DROP TABLE Books;
+DROP TABLE Articles;
+DROP TABLE Authors;
