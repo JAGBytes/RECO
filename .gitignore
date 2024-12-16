@@ -1,6 +1,6 @@
 # No ignorar el directorio labs/
 *
-*!/labs/
+!labs/
 
 # No ignorar el archivo .gitignore
 !.gitignore
