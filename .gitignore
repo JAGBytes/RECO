@@ -1,4 +1,5 @@
 # No ignorar el directorio labs/
+*
 *!/labs/
 
 # No ignorar el archivo .gitignore
@@ -19,4 +20,3 @@ labs/**/*videos/
 # Ignorar archivos temporales generados por editores de texto
 *.log
 *.tmp
-*
