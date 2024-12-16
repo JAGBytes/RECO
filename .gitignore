@@ -1,0 +1,18 @@
+# Ignorar todo por defecto
+*
+!.gitignore
+# No ignorar el directorio labs/
+!labs/
+
+# No ignorar subdirectorios dentro de labs/
+!labs/**/
+
+# Excluir cualquier carpeta llamada Video, video, Videos o videos en cualquier subcarpeta de labs/
+labs/**/*Video/
+labs/**/*video/
+labs/**/*Videos/
+labs/**/*videos/
+
+# Ignorar archivos temporales generados por editores de texto
+*.log
+*.tmp
